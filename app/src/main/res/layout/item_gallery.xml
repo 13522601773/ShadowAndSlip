@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="530dp"
+    android:layout_height="740dp">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="530dp"
+        android:layout_height="0dp"
+        android:background="@drawable/hcb_gamelist_bg"
+        app:layout_constraintBottom_toTopOf="@+id/iv_shadow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.72"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hcb_bg_game_top"
+        app:layout_constraintEnd_toEndOf="@id/iv"
+        app:layout_constraintStart_toStartOf="@id/iv"
+        app:layout_constraintTop_toTopOf="@+id/iv" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hcb_bg_game_tou_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintEnd_toEndOf="@id/iv"
+        app:layout_constraintStart_toStartOf="@id/iv" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="25px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv"
+        app:layout_constraintStart_toStartOf="@id/iv"
+        app:layout_constraintTop_toTopOf="@+id/iv" />
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_inter"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintLeft_toLeftOf="@+id/iv"
+        app:layout_constraintRight_toRightOf="@+id/iv" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_inter"
+        app:layout_constraintEnd_toEndOf="@+id/iv_inter"
+        app:layout_constraintStart_toStartOf="@+id/iv_inter" />
+
+    <ImageView
+        android:id="@+id/iv_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/iv"
+        app:layout_constraintStart_toStartOf="@id/iv"
+        app:layout_constraintTop_toBottomOf="@id/iv" />
+</android.support.constraint.ConstraintLayout>
